@@ -9,5 +9,18 @@ return {
         },
       },
     },
+    scroll = {
+      animate = {
+        duration = {
+          step = 10,
+          total = 70,
+        },
+      },
+    },
+    indent = {
+      animate = {
+        enabled = false,
+      },
+    },
   },
 }
