@@ -19,8 +19,8 @@ return {
       },
       color_overrides = {
         all = {
-          rosewater = "#ff5555",
-          -- rosewater = "#d6acff",
+          rosewater = "#bd93f9", -- LazyGit cursor
+          -- flamingo = "#d6acff",
           flamingo = "#ff92df", -- '>' (snacks find file)
           pink = "#ff92df", -- !, ?, {} (in fstring)
           mauve = "#ff79c6", -- keywords
