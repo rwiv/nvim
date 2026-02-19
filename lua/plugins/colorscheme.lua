@@ -19,33 +19,32 @@ return {
       },
       color_overrides = {
         all = {
-          rosewater = "#bd93f9", -- LazyGit cursor
-          -- flamingo = "#d6acff",
-          flamingo = "#ff92df", -- '>' (snacks find file)
-          pink = "#ff92df", -- !, ?, {} (in fstring)
-          mauve = "#ff79c6", -- keywords
-          red = "#f38ba8", -- this(or self), error string
-          maroon = "#f8f8f2", -- parameters
-          peach = "#bd93f9", -- constants
-          yellow = "#8be9fd", -- class, go package
-          green = "#f1fa8c", -- strings
-          teal = "#6272a4", -- python docstring, warning string
-          sky = "#94e2d5", -- =, ==, |, &&, TODO comments, initializer
-          sapphire = "#f1fa8c", -- ui folder color
-          blue = "#50fa7b", -- functions
-          lavender = "#ffb86c", -- attibutes
-          text = "#b9bcd1",
-          subtext1 = "#f8f8f2",
-          subtext0 = "#f8f8f2",
-          overlay2 = "#6272a4", -- comments
-          overlay1 = "#6272a4",
-          overlay0 = "#6272a4",
-          surface2 = "#44475a",
-          surface1 = "#6272a4", -- gitsigns
-          surface0 = "#44475a",
-          base = "#282a36",
-          mantle = "#21222c",
-          crust = "#191a21",
+          rosewater = "#d07277", -- LazyGit cursor
+          flamingo = "#d07277", -- '>' (snacks find file)
+          pink = "#be5046", -- !, ?, {} (in fstring)
+          mauve = "#b477cf", -- keywords
+          red = "#bf956a", -- this(or self), error string
+          maroon = "#dce0e5", -- parameters
+          peach = "#dfc184", -- constants
+          yellow = "#6eb4bf", -- class, go package, rust self
+          green = "#a1c181", -- strings
+          teal = "#dfc184", -- python docstring, warning string
+          sky = "#56b6c2", -- =, ==, |, &&, TODO comments, initializer
+          sapphire = "#a1c181", -- ui folder color
+          blue = "#73ade9", -- functions
+          lavender = "#d07277", -- attibutes
+          text = "#acb2be",
+          subtext1 = "#dce0e5",
+          subtext0 = "#dce0e5",
+          overlay2 = "#878e98", -- comments, brackets
+          overlay1 = "#878e98",
+          overlay0 = "#5d636f", -- suggestion, hint text
+          surface2 = "#2f343e",
+          surface1 = "#5d636f", -- gitsigns
+          surface0 = "#2f343e", -- line background, hind background
+          base = "#282c33",
+          mantle = "#2f343e",
+          crust = "#3b414d",
         },
       },
     },
