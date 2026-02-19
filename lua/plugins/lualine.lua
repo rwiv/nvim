@@ -4,7 +4,7 @@ return {
     opts = {
       sections = {
         lualine_a = {},
-        lualine_b = {},
+        -- lualine_b = {},
         -- lualine_c = {
         --   { LazyVim.lualine.pretty_path() },
         -- },

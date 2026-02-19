@@ -12,3 +12,14 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt.spell = false -- dissable spell checking for markdown files
   end,
 })
+
+-- https://neovim.io/doc/user/faq.html#faq
+vim.api.nvim_create_autocmd({ "VimLeave", "VimSuspend" }, {
+  pattern = "*",
+  callback = function()
+    -- https://github.com/microsoft/terminal/issues/13420#issuecomment-1501102143
+    vim.opt.guicursor = ""
+    vim.fn.chansend(vim.v.stderr, "\x1b[ q")
+  end,
+  desc = "Restore terminal cursor",
+})
