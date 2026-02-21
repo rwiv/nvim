@@ -41,7 +41,7 @@ return {
           overlay0 = "#5d636f", -- suggestion, hint text
           surface2 = "#2f343e",
           surface1 = "#5d636f", -- gitsigns
-          surface0 = "#2f343e", -- line background, hind background
+          surface0 = "#2f343e", -- line background, hint background
           base = "#282c33",
           mantle = "#2f343e",
           crust = "#3b414d",
