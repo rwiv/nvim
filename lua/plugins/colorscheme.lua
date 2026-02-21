@@ -21,15 +21,15 @@ return {
         all = {
           rosewater = "#acb2be", -- LazyGit cursor
           flamingo = "#acb2be", -- '>' (snacks find file)
-          pink = "#be5046", -- !, ?, {} (in fstring)
+          pink = "#be5046", -- !, ?
           mauve = "#b477cf", -- keywords
-          red = "#bf956a", -- this(or self), error string
+          red = "#bf956a", -- this(or self), error diagnostics
           maroon = "#dce0e5", -- parameters
           peach = "#dfc184", -- constants
-          yellow = "#6eb4bf", -- class, go package, rust self
+          yellow = "#6eb4bf", -- class, go package, rust self, lint diagnostics
           green = "#a1c181", -- strings
-          teal = "#dfc184", -- python docstring, warning string
-          sky = "#56b6c2", -- =, ==, |, &&, TODO comments, initializer
+          teal = "#dfc184", -- python docstring, warning diagnostics, rust enum variant (e.g. Ok, Err...)
+          sky = "#6eb4bf", -- =, ==, |, &&, TODO comments, python initializer
           sapphire = "#a1c181", -- ui folder color
           blue = "#73ade9", -- functions
           lavender = "#d07277", -- attibutes
