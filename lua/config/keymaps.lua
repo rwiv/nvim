@@ -34,3 +34,12 @@ vim.keymap.set("v", "<leader>cy", function()
   local keys = vim.api.nvim_replace_termcodes("<Esc>", true, false, true)
   vim.api.nvim_feedkeys(keys, "n", false)
 end, { desc = "Copy @relative_file#range" })
+
+-- Alt+j, Alt+k 줄 이동 단축키 해제 (Esc 연속 입력 시 충돌 방지)
+local del = vim.keymap.del
+pcall(del, "i", "<A-j>")
+pcall(del, "i", "<A-k>")
+pcall(del, "n", "<A-j>")
+pcall(del, "n", "<A-k>")
+pcall(del, "v", "<A-j>")
+pcall(del, "v", "<A-k>")
