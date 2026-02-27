@@ -19,6 +19,10 @@ return {
       },
       color_overrides = {
         all = {
+          rosewater = "#bac2de", -- LazyGit cursor
+          flamingo = "#bac2de", -- snacks.nvim cursor
+          overlay0 = "#7f849c", -- suggestion, hint text
+          surface0 = "#282837", -- line background, hint background
           base = "#1e1e1e",
           mantle = "#222222",
           crust = "#222222",
