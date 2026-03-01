@@ -31,9 +31,6 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
     -- disable autoformat for markdown files, as it can cause unwanted formatting changes
     vim.b.autoformat = false
 
-    -- disable conceal for markdown files, as it can cause issues with displaying certain characters and formatting
-    vim.opt_local.conceallevel = 0
-
     -- enable wrap and linebreak for markdown files, as they are often used for writing long-form content
     vim.opt_local.wrap = true
     vim.opt_local.linebreak = true
