@@ -24,15 +24,3 @@ vim.api.nvim_create_autocmd({ "VimLeave", "VimSuspend" }, {
   end,
   desc = "Restore terminal cursor",
 })
-
-vim.api.nvim_create_autocmd({ "FileType" }, {
-  pattern = { "markdown" },
-  callback = function()
-    -- disable autoformat for markdown files, as it can cause unwanted formatting changes
-    vim.b.autoformat = false
-
-    -- enable wrap and linebreak for markdown files, as they are often used for writing long-form content
-    vim.opt_local.wrap = true
-    vim.opt_local.linebreak = true
-  end,
-})
