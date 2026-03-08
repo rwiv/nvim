@@ -24,3 +24,13 @@ vim.api.nvim_create_autocmd({ "VimLeave", "VimSuspend" }, {
   end,
   desc = "Restore terminal cursor",
 })
+
+vim.api.nvim_create_autocmd({ "FileType" }, {
+  pattern = { "markdown" },
+  callback = function()
+    vim.b.autoformat = false
+
+    vim.opt_local.wrap = true
+    vim.opt_local.linebreak = true
+  end,
+})
