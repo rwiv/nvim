@@ -25,12 +25,18 @@ vim.api.nvim_create_autocmd({ "VimLeave", "VimSuspend" }, {
   desc = "Restore terminal cursor",
 })
 
-vim.api.nvim_create_autocmd({ "FileType" }, {
-  pattern = { "markdown" },
-  callback = function()
-    vim.b.autoformat = false
+vim.api.nvim_create_autocmd({ "FileType", "BufWinEnter" }, {
+  -- Include both 'markdown' (for FileType) and extension patterns (for BufWinEnter).
+  -- Adding 'BufWinEnter' fixes the issue where window-local options (wrap, linebreak)
+  -- are lost when quickly switching back and forth between buffers using Harpoon.
+  pattern = { "markdown", "*.md", "*.markdown" },
+  callback = function(args)
+    -- Double-check the filetype to apply safely even when triggered by extension patterns.
+    if vim.bo[args.buf].filetype == "markdown" then
+      vim.b[args.buf].autoformat = false
 
-    vim.opt_local.wrap = true
-    vim.opt_local.linebreak = true
+      vim.opt_local.wrap = true
+      vim.opt_local.linebreak = true
+    end
   end,
 })
